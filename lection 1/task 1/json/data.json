@@ -1,0 +1,8 @@
+[
+    { "title": "Item title 1", "size": 4, "img": "img/item1.jpg" },
+    { "title": "Item title 2", "size": 35, "img": "img/item2.jpg" },
+    { "title": "Item title 3", "size": 22, "img": "img/item3.jpg" },
+    { "title": "Item title 4", "size": 4, "img": "img/item4.jpg" },
+    { "title": "Item title 5", "size": 35, "img": "img/item5.jpg" },
+    { "title": "Item title 6", "size": 22, "img": "img/item6.jpg" }
+]
