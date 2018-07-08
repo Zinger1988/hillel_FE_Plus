@@ -23,29 +23,26 @@ function runAsyncAll(arr, async){
 }
 
 function asyncOne(){
-    let timeout = 1500;
     return new Promise((resolve) => {
         setTimeout( () => { 
-            resolve("1: " + timeout);
-        }, timeout);
+            resolve("1: " + getTime());
+        }, 1500);
     })
 }
 
 function asyncTwo(){
-    let timeout = 1000;
     return new Promise((resolve) => {
         setTimeout( () => { 
-            resolve("2: " + timeout);
-        }, timeout);
+            resolve("2: " + getTime());
+        }, 1000);
     })
 }
 
 function asyncThree(){
-    let timeout = 500;
     return new Promise((resolve) => {
         setTimeout( () => { 
-            resolve("3: " + timeout);
-        }, timeout);
+            resolve("3: " + getTime());
+        }, 500);
     })    
 }
 
