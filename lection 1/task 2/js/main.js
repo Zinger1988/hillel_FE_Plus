@@ -9,10 +9,10 @@ fetch('json/data.json')
     let getList = JSON.parse(text);
     
     class ViewController{
-        constructor( title, size, img){
-            this.title = title;
-            this.size = size;
-            this.img = img;
+        constructor(el){
+            this.title = el.title;
+            this.size = el.size;
+            this.img = el.img;
         }
         render (){
             let [wrapper, newItem] = [document.querySelector('.task-body'), document.createElement('div')];
@@ -25,7 +25,7 @@ fetch('json/data.json')
     }
     
     getList.forEach(element => {
-        element = new ViewController(element.title, element.size, element.img);
+        element = new ViewController(element);
         element.render();
     });
     
